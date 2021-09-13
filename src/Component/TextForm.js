@@ -29,11 +29,11 @@ export default function TextForm(props) {
             <div className="container" style={{color: props.mode ===  'light'?'#010621':'white'}}>
                 <h1>{props.heading}</h1>
                 <div className="mb-3">
-                    <textarea className="form-control my-3" style={{color:props.mode ==='dark'?'white':'black',backgroundColor: props.mode ===  'dark'?'grey':'#f1d5f7'}} value={text} onChange={handleOnChange} id="myBox" rows="12"></textarea>
+                    <textarea className="form-control my-3" style={{color:props.mode ==='dark'?'black':'black',backgroundColor: props.mode ===  'dark'?'#aaeaf2':'#aaf2d6'}} value={text} onChange={handleOnChange} id="myBox" rows="12"></textarea>
                 </div>
-                <button className="btn btn-warning mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
-                <button className="btn btn-warning mx-1 my-3" onClick={handlelowClick}>Convert to Lowercase</button>
-                <button className="btn btn-warning mx-1 my-3" onClick={handleClearClick}>Clear Text</button>
+                <button style={{color:props.mode ==='dark'?'white':'black',backgroundColor: props.mode ===  'dark'?'#2f9bc2':'#07f5aa',border:props.mode ===  'dark'?'1.5px solid white':' 1.5px solid black'}} className="btn mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+                <button style={{color:props.mode ==='dark'?'white':'black',backgroundColor: props.mode ===  'dark'?'#2f9bc2':'#07f5aa', border:props.mode ===  'dark'?'1.5px solid white':' 1.5px solid black'}} className="btn mx-1 my-1" onClick={handlelowClick}>Convert to Lowercase</button>
+                <button style={{color:props.mode ==='dark'?'white':'black',backgroundColor: props.mode ===  'dark'?'#2f9bc2':'#07f5aa',border:props.mode ===  'dark'?'1.5px solid white':' 1.5px solid black'}} className="btn mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
             </div>
 
 
